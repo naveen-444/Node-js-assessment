@@ -60,8 +60,6 @@ router.get('/notes/:id',(req,res)=>{
     return res.status(404).json({ message: 'Id not found' });
   }
 
-  const { note } = req.body;
- 
   res.json(notes[noteIndex]);
 
 });
